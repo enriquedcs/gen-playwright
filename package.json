@@ -1,0 +1,21 @@
+{
+  "name": "gen-playwright",
+  "version": "1.0.0",
+  "description": "Automation with playwright",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "playwright test --config=playwright.config.ts --project=Chromium",
+    "test:firefox": "playwright test --config=playwright.config.ts --project=Firefox",
+    "test:webkit": "playwright test --config=playwright.config.ts --project=Webkit",
+    "test:api": "playwright test --config=api.config.ts --project=Chromium"
+  },
+  "keywords": [
+    "Automation"
+  ],
+  "author": "enrique decoss",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.20.1",
+    "prettier": "^2.6.1"
+  }
+}
